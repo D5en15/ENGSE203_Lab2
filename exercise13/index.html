@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Formatting XML with CSS and Validate using external DTD-->
+<?xml-stylesheet type="text/css" href="library_xml.css"?>
+<!DOCTYPE Library SYSTEM "library.dtd">
+<!--XML Validation using Internal DTD <!DOCTYPE Library
+[
+<!ELEMENT Library (#PCDATA|Book)*>
+<!ELEMENT Book (Bid,BName,Price,Author)>
+<!ELEMENT Author (FName|LName)*>
+<!ELEMENT FName (#PCDATA)>
+<!ELEMENT LName (#PCDATA)>
+<!ELEMENT Bid (#PCDATA)>
+<!ELEMENT BName (#PCDATA)>
+<!ELEMENT Price (#PCDATA)>
+<!ATTLIST Book
+Language CDATA #FIXED "English"
+Publication CDATA #REQUIRED
+Avialable (Yes|No) "No">
+] >-->
+<Library>
+  This is a library XML document with CSS and Validate using external DTD
+  <Book Publication="2011" Avialable="Yes">
+    <Bid>101</Bid>
+    <BName>Let Us C</BName>
+    <Price>430</Price>
+    <Author>
+      <FName>Yashwant</FName>
+      <LName>Kanetkar</LName>
+      <FName>Abc</FName>
+    </Author>
+  </Book>
+  <Book Language="English" Publication="2011" Avialable="No">
+    <Bid>201</Bid>
+    <BName>Let Us Cpp</BName>
+    <Price>430</Price>
+    <Author>
+      <LName>Kanetkar</LName>
+      <FName>Yashwant</FName>
+    </Author>
+  </Book>
+</Library>

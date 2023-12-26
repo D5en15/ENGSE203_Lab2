@@ -1,0 +1,108 @@
+h2,
+h3 {
+  color: maroon;
+  font-size: 20pt;
+  text-align: center;
+}
+hr {
+  color: navy;
+}
+p {
+  font-size: 11pt;
+  margin-left: 15px;
+}
+a:link {
+  color: green;
+}
+a:visited {
+  color: yellow;
+}
+a:hover {
+  color: black;
+}
+a:active {
+  color: blue;
+}
+
+body {
+  margin-left: 200px;
+}
+
+div.abc {
+  border: 1px solid gray;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  background-color: #d0f0f6;
+  text-align: left;
+  padding: 8px;
+}
+ul.abc {
+  list-style: circle;
+}
+#xyz {
+  font-size: 18px;
+  font-style: italic;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Baloo+Thambi");
+
+body {
+    font-family: 'Baloo Thambi', cursive;
+    height: 100vh;
+  }
+
+.text-container > span {
+  text-transform: uppercase;
+  animation: glow 2.5s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    color: #fff;
+    text-shadow: 0 0 10px #0652dd, 0 0 50px #0652dd, 0 0 100px #0652dd;
+  }
+
+  10%,
+  90% {
+    color: #111;
+    text-shadow: none;
+  }
+}
+
+.text-container > span:nth-child(2) {
+  animation-delay: 0.25s;
+}
+
+.text-container > span:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.text-container > span:nth-child(4) {
+  animation-delay: 0.75s;
+}
+
+.text-container > span:nth-child(5) {
+  animation-delay: 1s;
+}
+
+.text-container > span:nth-child(6) {
+  animation-delay: 1.25s;
+}
+
+.text-container > span:nth-child(7) {
+  animation-delay: 1.5s;
+}
+
+.text-container > span:nth-child(8) {
+  animation-delay: 1.75s;
+}
+
+.text-container > span:nth-child(9) {
+  animation-delay: 2s;
+}
+
+.text-container > span:nth-child(10) {
+  animation-delay: 2.25s;
+}
